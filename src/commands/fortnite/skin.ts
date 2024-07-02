@@ -29,7 +29,7 @@ class SkinCommand extends Command {
         }
 
         client.party.me.setOutfit(skin.id, undefined, undefined);
-        message.reply(`Set skin to "${skin.name}"`);
+        message.reply(`Me he puesto a la skin "${skin.name}"`);
     }
 }
 

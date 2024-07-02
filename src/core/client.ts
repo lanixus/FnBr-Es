@@ -7,7 +7,7 @@ import Event from './event';
 import { readdir } from 'fs/promises';
 import { Logger } from '@schiacciata/logger';
 import { Cosmetic, SearchCosmeticOptions } from '../types/cosmetics';
-import { request } from 'undici'
+import { request } from 'undici';
 import { getDist } from '../lib/fs';
 
 class BotClient extends Client {
@@ -18,23 +18,33 @@ class BotClient extends Client {
     events: Map<string, Event>;
     logger: Logger;
     cosmetics: Cosmetic[];
+    
     constructor(config: Config) {
         super({
-            "defaultStatus": config.status,
-            "platform": config.platform,
-            "xmppKeepAliveInterval": 50,
-            "auth": auth.load(),
-            "partyConfig": {
-                "privacy": Enums.PartyPrivacy.PUBLIC,
-                "joinConfirmation": false,
-                "joinability": "OPEN",
-                "maxSize": 16,
-                "chatEnabled": true,
+            defaultStatus: config.status,
+            platform: config.platform,
+            xmppKeepAliveInterval: 50,
+            auth: auth.load(),
+            partyConfig: {
+                privacy: Enums.PartyPrivacy.PUBLIC,
+                joinConfirmation: false,
+                joinability: "OPEN",
+                maxSize: 16,
+                chatEnabled: true,
             },
-            "defaultOnlineType": Enums.PresenceOnlineType.ONLINE,
+            defaultOnlineType: Enums.PresenceOnlineType.ONLINE,
         });
-        
-        this.logger = new Logger();
+
+        // Define las opciones del logger
+        const loggerOptions = {
+            symbols: true,
+            text: true,
+            date: true,
+            isEnabled: true,
+        };
+
+        // Pasa las opciones al constructor del Logger
+        this.logger = new Logger(loggerOptions);
         this.settings = config;
         this.cosmetics = [];
 
@@ -86,7 +96,7 @@ class BotClient extends Client {
     async start() {
         await this._loadHandlers();
         await this._loadCosmetics();
-        await super.login()
+        await super.login();
         //process.exit();
     }
 }

@@ -18,3 +18,8 @@ The bot configuration can be edited inside the `src/config.ts` file
 
 *In order to load the .env file, you must have Node.js >= 20.6.0 installed,
 otherwise simply hardcode them in the config.ts file*
+
+# Notas
+
+Al realizar la instalacion, necesitaras modificar "node_modules/@schiacciata/logger/dist/src/Logger.js"
+El codigo nuevo lo encontraras en la carpeta "Mod" en el archivo "Logger.js"

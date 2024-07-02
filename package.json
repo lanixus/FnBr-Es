@@ -3,13 +3,13 @@
   "version": "1.1.0",
   "description": "A powerful fortnite lobby bot written in Node.js and powered by the fnbr library",
   "main": "dist/index.js",
-  "homepage": "https://github.com/47PADO47/FnBrBot#readme",
+  "homepage": "https://github.com/lanixus/FnBrBot#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/47PADO47/FnBrBot.git"
+    "url": "https://github.com/lanixus/FnBrBot-nobug.git"
   },
   "bugs": {
-    "url": "https://github.com/47PADO47/FnBrBot/issues"
+    "url": "https://github.com/lanixus/FnBrBot-nobug/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "start": "node --env-file .env ."
   },
   "keywords": [],
-  "author": "PADO",
+  "author": "Lanixus (mejorado)",
   "license": "ISC",
   "dependencies": {
     "@schiacciata/logger": "github:schiacciata/logger",

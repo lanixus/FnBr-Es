@@ -2,14 +2,14 @@ import { Platform } from "fnbr/dist/enums/Enums";
 import { Config } from "./types/config";
 
 const config: Config = {
-    prefix: "!",
+    prefix: "",
     ownerIds: process.env.OWNER_IDS?.split(', ') || [],
-    status: "🛴",
-    platform: Platform.IOS,
-    outfit: "Skeletara",
+    status: "Nosotros, somos linux.",
+    platform: Platform.PS5,
+    outfit: "Glow",
     backpack: "Pursuit",
     pickaxe: "Driver",
-    emote: "Poki",
+    emote: "Scenario",
     level: 999,
 };
 

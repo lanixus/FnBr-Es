@@ -16,7 +16,7 @@
         "removeComments": false,
         "alwaysStrict": true,
         "pretty": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "incremental": false,
         "importHelpers": false,
         "skipLibCheck": true,
@@ -24,8 +24,10 @@
         "strictPropertyInitialization": false,
         "experimentalDecorators": true,
         "resolveJsonModule": true,
-        "rootDir": "src",
+        "rootDir": "./src",
         "noImplicitAny": true,
-        "allowJs": true,
+        "allowJs": true
     },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
 }

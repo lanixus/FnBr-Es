@@ -11,7 +11,7 @@ A powerful fortnite lobby bot written in TypeScript and powered by the [fnbr](ht
 6. instala typescript `npm install typescript`
 7. Build the bot via the `npm run build` command
 8. Run the bot via the `npm run start` command
-9. Get an authorization code from **[here](https://www.epicgames.com/id/logout?redirectUrl=https%3A//www.epicgames.com/id/login%3FredirectUrl%3Dhttps%253A%252F%252Fwww.epicgames.com%252Fid%252Fapi%252Fredirect%253FclientId%253D3446cd72694c4a4485d81b77adbb2141%2526responseType%253Dcode)**
+9. Get an authorization code from **[here](https://www.epicgames.com/id/logout?redirectUrl=https%3A//www.epicgames.com/id/login%3FredirectUrl%3Dhttps%253A%252F%252Fwww.epicgames.com%252Fid%252Fapi%252Fredirect%253FclientId%253D3f69e56c7649492c8cc29f1af08a8a12%2526responseType%253Dcode)**
 10. Paste the authorization code when asked and your bot should log-in
 
 # Configuration
